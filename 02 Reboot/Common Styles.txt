@@ -1,0 +1,8 @@
+Bootstrap maintain reboot to keep pages Identical in almost all browsers.
+
+Some common styles:
+
+# Use 'rem' unit instead of 'em'
+# Avoid 'margin-top'
+# 'inherit' css property from parent where possible
+# 
