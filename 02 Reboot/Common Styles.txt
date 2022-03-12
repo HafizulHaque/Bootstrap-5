@@ -1,8 +1,13 @@
 Bootstrap maintain reboot to keep pages Identical in almost all browsers.
 
-Some common styles:
+Some Common Styles:
 
 # Use 'rem' unit instead of 'em'
 # Avoid 'margin-top'
 # 'inherit' css property from parent where possible
-# 
+
+Some CSS Defaults:
+
+# font-family: sans-serif
+# background-color: #fff
+# box-sizing: border-box

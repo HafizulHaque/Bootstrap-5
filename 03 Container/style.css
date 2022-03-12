@@ -1,0 +1,17 @@
+body {
+  background: skyblue;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+div:nth-of-type(even){
+  background: rgba(0, 255, 0, 0.5);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+div:nth-of-type(odd){
+  background: rgba(255, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 0, 0.5);
+}
