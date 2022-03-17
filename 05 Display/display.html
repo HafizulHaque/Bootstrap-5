@@ -57,7 +57,49 @@
       <div class="d-inline text-light bg-dark me-5">div-3 with class d-inline</div>
       <div class="d-inline text-light bg-dark me-5">div-4 with class d-inline</div>
 
-      <h2>Example of </h2>
+      <h2>Example of d-table</h2>
+      <div class="d-table">
+        <div class="d-table-row bg-primary">
+          <div class="d-table-cell bg-success p-2">Row-1, cell-1</div>
+          <div class="d-table-cell bg-success p-2">Row-1, cell-2</div>
+          <div class="d-table-cell bg-success p-2">Row-1, cell-3</div>
+        </div>
+        <div class="d-table-row bg-primary">
+          <div class="d-table-cell bg-primary p-2">Row-2, cell-1</div>
+          <div class="d-table-cell bg-success p-2">Row-2, cell-2</div>
+          <div class="d-table-cell bg-success p-2">Row-2, cell-3</div>
+        </div>
+      </div>
+
+      <h2>Example of d-flex</h2>
+      <div 
+        style="height: 25vh; border: 1px dashed #eee;" 
+        class="d-flex align-items-center justify-content-evenly">
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-1</div>
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-2</div>
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-3</div>
+      </div>
+
+      <h2>Example of d-inline flex</h2>
+      <div class="d-inline-flex">
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-1</div>
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-2</div>
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-3</div>
+      </div>
+      <div class="d-inline-flex">
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-4</div>
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-5</div>
+        <div class="p-2 bg-dark text-light text-center" style="width: 150px;">Div-6</div>
+      </div>
+
+      <h2>Diplay:none vs Visibility:hidden</h2>
+
+      <p class="text-danger">
+        Hello! This is (<span class="d-none">Display: none</span>) text that is taken out of DOM but this is (<span class="invisible">Visibility:hidden</span>) text is not visible but still takes it's place in the DOM.
+      </p>
+
+
+
     </div>
 
   </div>
