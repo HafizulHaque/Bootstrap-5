@@ -1,0 +1,17 @@
+.container {
+  margin-top: 1em;
+}
+
+.parent {
+  border: 2px solid red;
+}
+
+.child {
+  border: 2px solid blue;
+}
+
+.target {
+  background: #ded !important;
+  color: #333 !important;
+  border-color: yellow !important;
+}

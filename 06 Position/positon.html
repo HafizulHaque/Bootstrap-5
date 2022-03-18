@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap cdn  -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+  <!-- bootstrap icon cdn  -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- custom css  -->
+  <link rel="stylesheet" href="style.css">
+  <title>Position</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>position-static is the default positioning of element.</h1>
+    <div class="parent">
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-1</div>
+      <div class="child py-3 px-2 text-center target position-static">
+        div element-2
+      </div>
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-3</div>
+    </div>
+
+    <h1>position-relative is the the position relative to original position in DOM</h1>
+    <div class="parent">
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-1</div>
+      <div 
+        class="child py-3 px-2 text-center target position-relative bottom-0 end-100">
+        div element-2
+      </div>
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-3</div>
+    </div>
+
+    <h1>
+      position-relative is positon that take element out of DOM flow and put in relative to parent with position-relative. if no such parent, then relative to viewport
+    </h1>
+    <div class="parent position-relative">
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-1</div>
+      <div 
+        class="child py-3 px-2 text-center target position-absolute top-0 left-0">
+        div element-2
+      </div>
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-3</div>
+    </div>
+
+    <h1>position-sticky.</h1>
+    <div class="parent">
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-1</div>
+      <div 
+        class="child py-3 px-2 text-center target position-sticky top-0 start-0">
+        div element-2
+      </div>
+      <div class="child py-3 px-2 text-center bg-dark text-light">div element-3</div>
+    </div>
+
+    <div
+      class="d-inline-block bg-primary text-light my-5 px-3 py-2 rounded-2 position-relative">
+      Click me
+      <i 
+        class="bi bi-heart-fill text-danger position-absolute translate-middle top-0 start-100"
+        style="font-size: 1.2em;">
+      </i>
+    </div>
+
+    
+    <div class="text-center bg-dark text-danger p-5 h1">
+      Header Of Website
+      <div class="sticky-top p-3 text-center bg-primary text-secondary">Navbar</div>
+    </div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam error iste culpa corrupti sapiente corporis magnam vitae eveniet, minus nostrum nulla dolorem atque laudantium quaerat aperiam ab recusandae id, ratione reiciendis beatae. Dolorem perspiciatis voluptatibus autem error commodi sequi quam? Odit nostrum animi, harum labore fugit a omnis necessitatibus temporibus possimus beatae numquam accusantium aperiam placeat dicta nemo obcaecati voluptates dignissimos deserunt facere mollitia ratione. Eum itaque dolore soluta voluptate repellendus facere libero obcaecati perspiciatis pariatur, nesciunt dolorem veritatis dignissimos ex. Doloremque quo nihil, adipisci dolore harum at reiciendis. Sit itaque eligendi sapiente ducimus dolor, nam harum saepe labore?</div>
+  </div>
+
+
+  <!-- bootstrap bundle js  -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>
