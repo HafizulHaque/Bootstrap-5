@@ -1,0 +1,11 @@
+.container {
+  margin-top: 1em;
+}
+
+.text-vertical-align {
+  border: 1px solid #ddd;
+}
+
+.text-vertical-align span{
+  line-height: 50px;
+}
