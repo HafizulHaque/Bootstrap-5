@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <style>
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: '>';
+    }
+  </style>
+
+
+  <title>Bootstrap Practice</title>
+</head>
+<body>
+
+<nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a href="#" class="navbar-brand">Awesome Inc.</a>
+
+
+    <div class="collapse navbar-collapse" id="myTogglerNav">
+      <div class="navbar-nav">
+        <a href="#" class="nav-item nav-link active">Home</a>
+        <a href="#" class="nav-item nav-link">Products</a>
+        <a href="#" class="nav-item nav-link">Services</a>
+        <a href="#" class="nav-item nav-link">Contact</a>
+        <a href="#" class="nav-item nav-link disabled">FAQ</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="container my-3">
+  <div class="btn-group-vertical">
+    <button class="btn btn-primary">Cat</button>
+    <button class="btn btn-primary">Dog</button>
+    <button class="btn btn-primary">Turtle</button>
+    <button class="btn btn-primary">Snake</button>
+    <button class="btn btn-primary">Lion</button>
+  </div>
+</section>
+
+
+<section class="container">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam dolorum ad omnis, voluptas reprehenderit ut maxime fugiat molestias voluptatem, mollitia libero doloremque expedita nostrum repellendus earum. Voluptates, necessitatibus impedit?<span class="badge badge-danger badge-pill">NEW</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, maxime vero fugit distinctio illo facilis quisquam obcaecati. Repudiandae dolore aliquid nemo assumenda accusamus vero illo, nesciunt fugit molestiae nostrum incidunt?
+
+  <div class="progress">
+    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 73%;">73%</div>
+    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 15%;">15%</div>
+    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 5%;">5%</div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-action">Blog Entry</li>
+    <li class="list-group-item list-group-item-action">Book Review</li>
+    <li class="list-group-item list-group-item-action">Curriculam Vitae Generation</li>
+    <li class="list-group-item list-group-item-action active">Data Entry</li>
+    <li class="list-group-item list-group-item-action">Animation Video</li>
+    <li class="list-group-item list-group-item-action disabled">Photography Contest</li>
+  </ul>
+</section>
+
+<section class="container my-5">
+  <div class="list-group list-group-horizontal-md">
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Paste Control</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Cultivation Grooming</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Weeding Technology</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Seed Generation</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Watering Pumps</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Fertilizer Mix</a>
+  </div>
+</section>
+
+<section class="container my-5">
+  <nav  class="breadcrumb">
+    <a class="breadcrumb-item" href="#">Products</a>
+    <a class="breadcrumb-item" href="#">Smartphone</a>
+    <a class="breadcrumb-item" href="#">Xiaomi</a>
+    <span class="breadcrumb-item" >Redmi Note 10 Pro</span>
+  </nav>
+</section>
+
+<section class="container my-5">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Products</a></li>
+    <li class="breadcrumb-item"><a href="#">Smartphone</a></li>
+    <li class="breadcrumb-item"><a href="#">Xiaomi</a></li>
+    <li class="breadcrumb-item active"><span>Redmi Note 10 Pro</span></li>
+  </ol>
+</section>
+
+<section class="container">
+  <div class="border m-4 p-3 shadow-none">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magni. Hic soluta quibusdam cupiditate est aperiam quisquam enim nemo accusamus. Quos voluptas eveniet, in est ipsam repellat sequi ea recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod praesentium et dolorem quasi numquam fugit cum alias, reiciendis repellendus dolores dicta quisquam voluptatem exercitationem! Magni neque officia perferendis debitis minus.
+  </div>
+  <div class="border m-4 p-3 shadow">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magni. Hic soluta quibusdam cupiditate est aperiam quisquam enim nemo accusamus. Quos voluptas eveniet, in est ipsam repellat sequi ea recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod praesentium et dolorem quasi numquam fugit cum alias, reiciendis repellendus dolores dicta quisquam voluptatem exercitationem! Magni neque officia perferendis debitis minus.
+  </div>
+  <div class="border m-4 p-3 shadow-sm">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magni. Hic soluta quibusdam cupiditate est aperiam quisquam enim nemo accusamus. Quos voluptas eveniet, in est ipsam repellat sequi ea recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod praesentium et dolorem quasi numquam fugit cum alias, reiciendis repellendus dolores dicta quisquam voluptatem exercitationem! Magni neque officia perferendis debitis minus.
+  </div>
+  <div class="border m-4 p-3 shadow-lg">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magni. Hic soluta quibusdam cupiditate est aperiam quisquam enim nemo accusamus. Quos voluptas eveniet, in est ipsam repellat sequi ea recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod praesentium et dolorem quasi numquam fugit cum alias, reiciendis repellendus dolores dicta quisquam voluptatem exercitationem! Magni neque officia perferendis debitis minus.
+  </div>
+</section>
+  
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
